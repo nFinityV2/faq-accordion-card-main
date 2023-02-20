@@ -36,6 +36,10 @@ hr {
     font-size: 0.95rem;
 }
 
+.acc-header:hover {
+    color: hsl(14, 88%, 65%);
+}
+
 .acc-header::before {
     content: url('images/icon-arrow-down.svg');
     position: absolute;
