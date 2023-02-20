@@ -4,30 +4,70 @@ body {
     place-content: center;
     background-image: linear-gradient(hsl(273, 75%, 66%), hsl(240, 73%, 65%));
     background-repeat: no-repeat;
+    color: hsl(240, 6%, 50%);
     font-family: 'Kumbh Sans', sans-serif;
     font-size: 0.75rem;
+    line-height: 1.5;
 }
 
 h1 {
     text-align: center;
+    font-size: 2rem;
     font-weight: 700;
+    color: hsl(238, 29%, 16%);
 }
 
 hr {
-    color: hsl(240, 5%, 91%);
+    border: 1px solid hsl(240, 5%, 91%);
 }
 
 .card-section {
-    max-width: 375px;
+    max-width: 350px;
+    padding: 1.25rem;
     background-color: white;
     border: none;
     border-radius: 1rem;
 }
 
+.acc-header {
+    position: relative;
+    padding: 10px 0;
+    cursor: pointer;
+    font-size: 0.95rem;
+}
+
+.acc-header::before {
+    content: url('images/icon-arrow-down.svg');
+    position: absolute;
+    top: 25%;
+    right: 2px;
+}
+
+.acc-content {
+    position: relative;
+    height: 0;
+    text-align: justify;
+    overflow: hidden;
+    transition: 0.5s;
+}
+
+.active .acc-header::before {
+    transform: rotate(0.5turn);
+}
+
+.active .acc-header {
+    font-weight: 700;
+    color: hsl(238, 29%, 16%);
+}
+
+.active .acc-content {
+    height: 75px;
+}
 .attribution { 
     font-size: 11px; 
     text-align: center; 
     padding: 1rem;
+    color: hsl(240, 5%, 91%);
 }
 
 .attribution a { 
