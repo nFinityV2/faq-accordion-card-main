@@ -22,6 +22,9 @@ hr {
 }
 
 .card-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     max-width: 350px;
     padding: 1.25rem;
     background-color: white;
@@ -67,6 +70,22 @@ hr {
 .active .acc-content {
     height: 75px;
 }
+
+.img-container {
+    display: flex;
+    flex-direction: column;
+    overflow: visible;
+}
+
+.img-illustration {
+    width: 240px;
+    margin-top: -8rem;
+}
+
+.img-bg {
+    margin-top: -4.5rem;
+}
+
 .attribution { 
     font-size: 11px; 
     text-align: center; 
