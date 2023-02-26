@@ -121,7 +121,6 @@ hr {
     .card-section {
         max-width: 1000px;
         flex-direction: row;
-        overflow: clip;
         padding: 0;
     }
 
@@ -136,20 +135,21 @@ hr {
 
     .img-box {
         display: block;
-        translate: -25% 215%;
+        translate: -45% 202%;
     }
     
     .img-illustration {
         background-image: url('images/illustration-woman-online-desktop.svg');
+        background-position-x: -3.75rem;
         width: 472px;
         height: 359px;
-        translate: -13% 171%;
+        translate: 0% 170%;
     }
 
     .img-bg {
         background-image: url('images/bg-pattern-desktop.svg');
         background-position: -34.5rem -19rem;
         width: 472px;
-        height: 475px;
+        height: 510px;
     }
 }
