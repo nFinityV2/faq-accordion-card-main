@@ -25,11 +25,26 @@ hr {
     display: flex;
     flex-direction: column;
     align-items: center;
-    max-width: 350px;
+    max-width: 320px;
     padding: 1.25rem;
     background-color: white;
     border: none;
     border-radius: 1rem;
+}
+
+.img-section {
+    display: flex;
+    flex-direction: column;
+    overflow: visible;
+    margin-top: -12.5rem;
+}
+
+.img-box {
+    display: none;
+    background-image: url('images/illustration-box-desktop.svg');
+    background-repeat: no-repeat;
+    width: 190px;
+    height: 185px;
 }
 
 .acc-header {
@@ -71,19 +86,19 @@ hr {
     height: 75px;
 }
 
-.img-container {
-    display: flex;
-    flex-direction: column;
-    overflow: visible;
-}
-
 .img-illustration {
     width: 240px;
-    margin-top: -8rem;
+    height: 180px;
+    background-image: url('images/illustration-woman-online-mobile.svg');
+    background-repeat: no-repeat;
+    translate: 0 40%;
 }
 
 .img-bg {
-    margin-top: -4.5rem;
+    width: 240px;
+    height: 105px;
+    background-image: url('images/bg-pattern-mobile.svg');
+    background-repeat: no-repeat;
 }
 
 .attribution { 
@@ -95,4 +110,46 @@ hr {
 
 .attribution a { 
     color: hsl(0, 0%, 91%); 
+}
+
+@media (min-width: 1000px){
+
+    h1 {
+        text-align: justify;
+    }
+
+    .card-section {
+        max-width: 1000px;
+        flex-direction: row;
+        overflow: clip;
+        padding: 0;
+    }
+
+    .img-section {
+        margin-top: -34rem;
+    }
+
+    .accordion-section {
+        max-width: 450px;
+        padding: 2rem;
+    }
+
+    .img-box {
+        display: block;
+        translate: -25% 215%;
+    }
+    
+    .img-illustration {
+        background-image: url('images/illustration-woman-online-desktop.svg');
+        width: 472px;
+        height: 359px;
+        translate: -13% 171%;
+    }
+
+    .img-bg {
+        background-image: url('images/bg-pattern-desktop.svg');
+        background-position: -34.5rem -19rem;
+        width: 472px;
+        height: 475px;
+    }
 }
