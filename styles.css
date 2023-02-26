@@ -35,7 +35,7 @@ hr {
 .img-section {
     display: flex;
     flex-direction: column;
-    overflow: visible;
+    overflow: h;
     margin-top: -12.5rem;
 }
 
